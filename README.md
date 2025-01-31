@@ -1,4 +1,4 @@
-# 🎉 Gestor de Amigos
+# 🎉 Juego del amigo secreto
 
 ¡Bienvenido al juego del amigo secreto! Este es un proyecto simple y divertido que te permite agregar amigos y descubrir quien es tu amigo secreto, asegurarte de que no haya duplicados y sortear un amigo al azar. 
 
