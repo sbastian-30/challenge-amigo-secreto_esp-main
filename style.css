@@ -127,13 +127,11 @@ button {
 
 /* Listas */
 ul {
-    list-style: none;
-    padding: 0;
-}
-
-li {
-    padding: 5px;
-    margin: 5px 0;
+    list-style-type: none;
+    color: var(--color-text);
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    margin: 20px 0;
 }
 
 .result-list {
