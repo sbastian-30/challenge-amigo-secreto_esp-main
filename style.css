@@ -1,9 +1,9 @@
 :root {
-    --color-primary: #4B69FD;
+    --color-primary: #4CAF50;
     --color-secondary: #FFF9EB;
     --color-tertiary: #C4C4C4;
-    --color-button: #fe652b;
-    --color-button-hover: #e55720;
+    --color-button: #2E7D32;
+    --color-button-hover: #1B5E20;
     --color-text: #444444;
     --color-white: #FFFFFF;
 }
@@ -55,16 +55,15 @@ body {
 /* Títulos */
 .main-title {
     font-size: 48px;
-    font-family: "Merriweather", serif;
-    font-weight: 900;
-    font-style: italic;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
     color: var(--color-white);
 }
 
 .section-title {
-    font-family: "Inter", serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 36px;
-    font-weight: 700;
+    font-weight: 500;
     color: var(--color-primary);
     margin: 10px 0;
     text-align: center;
@@ -100,8 +99,8 @@ body {
     border: 2px solid #333;
     border-right: none;
     border-radius: 25px 0 0 25px;
-    font-family: "Merriweather", serif;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Estilos de botón */
@@ -129,14 +128,14 @@ button {
 ul {
     list-style-type: none;
     color: var(--color-text);
-    font-family: "Inter", sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
     margin: 20px 0;
 }
 
 .result-list {
     margin-top: 15px;
-    color: #05DF05;
+    color: #2E7D32;
     font-size: 22px;
     font-weight: bold;
     text-align: center;
@@ -151,6 +150,8 @@ ul {
     color: var(--color-white);
     background-color: var(--color-button);
     font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
 }
 
 .button-draw img {
@@ -159,4 +160,46 @@ ul {
 
 .button-draw:hover {
     background-color: var(--color-button-hover);
+    transform: translateY(-2px);
+}
+
+/* Estilos para la imagen del banner */
+.banner-image {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+}
+
+.header-banner {
+    flex: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0 0;
+}
+
+/* Estilos para el botón de reiniciar */
+.button-reset {
+    background-color: #ff3333;  /* Rojo más brillante */
+    color: var(--color-white);
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px 40px;
+    border: 2px solid #cc0000;  /* Borde rojo más oscuro */
+    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.2);  /* Sombra rojiza */
+}
+
+.button-reset:hover {
+    background-color: #cc0000;  /* Rojo más oscuro al hover */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(255, 0, 0, 0.3);  /* Sombra más pronunciada al hover */
+}
+
+.button-reset:active {
+    transform: translateY(0);
+    background-color: #990000;  /* Rojo aún más oscuro al hacer clic */
 }
